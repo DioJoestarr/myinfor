@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.window {
+  width: 100%;
+  min-height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: start;
+  flex-grow: 1;
+  user-select: none;
+  padding: 18px 18px;
+}
+.nav-ul {
+  display: flex;
+  width: 100%;
+}
+.nav-tab_li {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 500;
+  margin: 0 18px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+  height: auto;
+  text-align: center !important;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 0;
+  user-select: none;
+  color: rgb(209 213 219);
+}
+
+.underline {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgb(75 85 99);
+}
+
+li.selected {
+  color: rgb(239 68 68);
+ text-shadow:0 1px 3px #17181a;
+}
+.row-main{
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+.content-main{
+  font-family: inherit!important;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 36px;
+}
+.link-profile:hover{
+  color: rgb(239 68 68);
+  text-shadow:0 1px 3px #17181a;
+}
+.project-container{
+  display: flex;
+  margin: 18px 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.project{
+  margin-bottom: 24px;
+  border: solid 4px rgb(75 85 99);
+  border-radius: 12px;
+}
