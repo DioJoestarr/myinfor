@@ -6,7 +6,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { TbBrandNextjs } from "react-icons/tb";
 const Skills = () => {
   return (
-    <div className="flex mt-4 justify-between">
+    <div className="flex mt-4 w-full items-center justify-between flex-wrap">
       <div className="col-skill">
         <AiFillHtml5 className="content-skill_icon" />
         <div className="content-skill_text">HTML</div>

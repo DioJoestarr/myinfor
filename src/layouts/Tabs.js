@@ -33,6 +33,7 @@ const Tabs = () => {
               }
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+          
               onClick={() => {
                 navigate(item.slug !== "about" ? `/${item.slug}` : "/");
               }}

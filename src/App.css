@@ -148,7 +148,7 @@ li.selected {
   align-items: center;
   flex-direction: column;
   margin-right: 18px;
-  width: 100%;
+  margin-top: 12px;
 }
 .content-skill_text{
   font-size: 1.4rem;
