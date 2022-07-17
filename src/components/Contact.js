@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <div className="row-main">
-        <BsFacebook size={36} />
+        <BsFacebook className="content-main_icon" />
         <a
           href="https://www.facebook.com/dai.xk.1/"
           target="_blank"

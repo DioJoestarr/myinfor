@@ -10,7 +10,7 @@ const Project = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={img} className="" alt="" />
+          <img src={img} className="project-img" alt="" />
         </a>
       </div>
     </>

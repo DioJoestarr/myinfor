@@ -6,9 +6,10 @@ import Contact from "./Contact";
 import Project from "./Project";
 
 const tabs = [
-  { label: "About", icon: "🧑", content: <About/>, slug: "about" },
-  { label: "Contact", icon: "📝", content: <Contact/>, slug: "contact" },
-  { label: "Project", icon: "🔧", content: <Project/>, slug: "project" },
+  { label: "About", icon: "🧑", content: <About />, slug: "about" },
+  /* { label: "Skill", icon: "💪", content: <About />, slug: "skill" }, */
+  { label: "Project", icon: "🔧", content: <Project />, slug: "project" },
+  { label: "Contact", icon: "📝", content: <Contact />, slug: "contact" },
 ];
 const Tabs = () => {
   const [selectedTab, setSelectedTab] = React.useState(0);
@@ -31,7 +32,8 @@ const Tabs = () => {
                 navigate(item.slug !== "about" ? `/${item.slug}` : "/");
               }}
             >
-              {`${item.icon} ${item.label}`}
+              <span className="nav-tab_span nav-tab_icon">{item.icon}</span>
+              <span className="nav-tab_span ml-1 nav-tab_label">{item.label}</span>
               {item === selectedTab ? (
                 <motion.div className="underline" layoutId="underline" />
               ) : null}

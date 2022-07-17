@@ -8,23 +8,23 @@ const About = () => {
   return (
     <>
       <div className="row-main">
-        <CgProfile size={36} />
+        <CgProfile className="content-main_icon" />
         <span className="content-main">Le Ngoc Dai</span>
       </div>
       <div className="row-main">
-        <GiPositionMarker size={36} />
+        <GiPositionMarker className="content-main_icon" />
         <span className="content-main">Bình Định</span>
       </div>
       <div className="row-main">
-        <FaBirthdayCake size={36} />
+        <FaBirthdayCake className="content-main_icon" />
         <span className="content-main">08/11/2001</span>
       </div>
       <div className="row-main">
-        <BsGenderMale size={36} />
+        <BsGenderMale className="content-main_icon" />
         <span className="content-main">Male</span>
       </div>
       <div className="row-main">
-        <FaSchool size={36} />
+        <FaSchool className="content-main_icon" />
         <span className="content-main">Cao Đẳng Công Thương</span>
       </div>
     </>
