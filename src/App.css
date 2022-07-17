@@ -60,7 +60,6 @@
 
 main {
   display: flex;
-  justify-content: start;
   flex-grow: 1;
   user-select: none;
   padding: 18px 18px;
@@ -140,12 +139,38 @@ li.selected {
 .content-main_icon {
   font-size: 1.9rem;
 }
+.content-skill_icon{
+  font-size: 3.6rem;
+}
+.col-skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 18px;
+  width: 100%;
+}
+.content-skill_text{
+  font-size: 1.4rem;
+}
+.box {
+  width: 250px;
+  height: 250px;
+  border: black solid 4px;
+ background-image: url("https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/250748865_2861777274113291_1110232546663015312_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=EvqLk7_bsrcAX82qSW-&_nc_ht=scontent.fsgn2-6.fna&oh=00_AT-Oaq1clDFA0Li29tXBIfX-f0pRj5nhLpa1PPzbqrLyPA&oe=62D70168");
+  background-size: cover;
+  background-position: center;
+}
 @media screen and (max-width: 768px) {
   .nav-tab_li {
     font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 480px) {
+  .box {
+    width: 200px;
+  height: 200px;
+  }
   .nav-tab_li {
     font-size: 1.6rem;
   }

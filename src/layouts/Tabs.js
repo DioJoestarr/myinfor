@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useParams } from "react-router-dom";
-import About from "./About";
-import Contact from "./Contact";
-import Project from "./Project";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Project from "../components/Project";
+import Skills from "../components/Skill";
 
 const tabs = [
   { label: "About", icon: "🧑", content: <About />, slug: "about" },
-  /* { label: "Skill", icon: "💪", content: <About />, slug: "skill" }, */
+  { label: "Skills", icon: "💪", content: <Skills />, slug: "skill" },
   { label: "Project", icon: "🔧", content: <Project />, slug: "project" },
   { label: "Contact", icon: "📝", content: <Contact />, slug: "contact" },
 ];
