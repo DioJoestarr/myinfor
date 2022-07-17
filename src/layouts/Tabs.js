@@ -17,28 +17,34 @@ const Tabs = () => {
   const { pages } = useParams();
   let navigate = useNavigate();
   useEffect(() => {
-    setSelectedTab(tabs.find((tab) => (pages ? tab.slug === pages  : tab.slug === "about")));
+    setSelectedTab(
+      tabs.find((tab) => (pages ? tab.slug === pages : tab.slug === "about"))
+    );
   }, [pages]);
   return (
     <div className="window">
       <nav>
         <ul className="nav-ul">
           {tabs.map((item) => (
-            <li
+            <motion.li
               key={item.label}
               className={
                 item === selectedTab ? "selected nav-tab_li" : "nav-tab_li"
               }
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               onClick={() => {
                 navigate(item.slug !== "about" ? `/${item.slug}` : "/");
               }}
             >
               <span className="nav-tab_span nav-tab_icon">{item.icon}</span>
-              <span className="nav-tab_span ml-1 nav-tab_label">{item.label}</span>
+              <span className="nav-tab_span ml-1 nav-tab_label">
+                {item.label}
+              </span>
               {item === selectedTab ? (
                 <motion.div className="underline" layoutId="underline" />
               ) : null}
-            </li>
+            </motion.li>
           ))}
         </ul>
       </nav>
@@ -49,7 +55,7 @@ const Tabs = () => {
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -10, opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
             className="text-white"
           >
             {selectedTab ? selectedTab.content : "😋"}
