@@ -1,7 +1,7 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { DiCss3 } from "react-icons/di";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { TbBrandNextjs } from "react-icons/tb";
 const Skills = () => {
@@ -14,6 +14,10 @@ const Skills = () => {
       <div className="col-skill">
         <DiCss3 className="content-skill_icon" />
         <div className="content-skill_text">CSS</div>
+      </div>
+      <div className="col-skill">
+        <SiTailwindcss className="content-skill_icon" />
+        <div className="content-skill_text">TailwindCSS</div>
       </div>
       <div className="col-skill">
         <SiJavascript className="content-skill_icon" />

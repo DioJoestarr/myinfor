@@ -2,7 +2,7 @@ import React from "react";
 import { animate, motion } from "framer-motion";
 const variants = {
   spin: {
-    scale: [1, 1.5, 1.5, 1, 1],
+    scale: [1, 1.4, 1.4, 1, 1],
     rotate: [0, 0, 180, 180, 0],
     borderRadius: ["0%", "0%", "50%", "50%", "50%"],
     transition: {
@@ -11,6 +11,8 @@ const variants = {
       times: [0, 0.2, 0.5, 0.8, 1],
       repeat: 0,
       repeatDelay: 2,
+      
+      type: "spring"
     },
   },
 };
