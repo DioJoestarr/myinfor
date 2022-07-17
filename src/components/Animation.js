@@ -22,6 +22,7 @@ const Animation = () => {
     <motion.div
       className="box"
       animate="spin"
+      whileTap={"spin"}
       whileHover={"spin"}
       variants={variants}
     />
