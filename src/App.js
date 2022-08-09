@@ -20,7 +20,7 @@ function App() {
     <div ref={ref} className=" App  w-full h-full">
       <div className=" dark:bg-black bg-gray-666 ">
         <div className=" fixed z-50 right-4 bottom-6 md:bottom-36 flex flex-col">
-          <div className=" relative mb-2 text-lg dark:text-white text-black ">{!enabled ? "LightMode" : "DarkMode"}</div>
+          <div className=" relative mb-2 text-lg dark:text-white text-black ">{enabled ? "Light Mode" : "Dark Mode"}</div>
           <SwitchButon enabled={enabled} setEnabled={setEnabled} />
         </div>
         <div className="container mx-auto">
