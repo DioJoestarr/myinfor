@@ -20,4 +20,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@layer components {
+  .content-main {
+    font-family: inherit !important;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 16px;
+    @apply dark:text-gray-999 text-gray-777;
+  }
+  .content-main_icon {
+    @apply dark:text-gray-999 text-gray-777 text-[1.9rem];
+  }
+  .nav-tab_li {
+    padding: 0 12px 0 6px;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    font-family: inherit;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: auto;
+    text-align: center !important;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    min-width: 15%;
+    user-select: none;
 
+    @apply dark:text-gray-555 text-gray-888;
+    font-size: 2.4rem;
+  }
+  li.selected {
+    @apply text-blue-999 dark:text-red-600 dark:text-shadowtext;
+  }
+  .underline {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    @apply dark:bg-gray-888 bg-blue-999 h-1;
+  }
+}

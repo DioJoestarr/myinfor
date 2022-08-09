@@ -74,47 +74,13 @@ main {
   justify-content: space-around;
   width: 100%;
 }
-.nav-tab_li {
-  padding: 0 12px 0 6px;
-  margin: 0;
-  list-style: none;
-  justify-content: center;
-  font-family: inherit;
-  border-radius: 5px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  height: auto;
-  text-align: center !important;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  min-width: 15%;
-  user-select: none;
-  color: rgb(209 213 219);
-  font-size: 2.4rem;
-}
 
-.underline {
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: rgb(75 85 99);
-}
 
-li.selected {
-  color: rgb(239 68 68);
-  text-shadow: 0 1px 3px #17181a;
-}
 
-.content-main {
-  font-family: inherit !important;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-left: 16px;
-}
+
+
+
+
 .link-profile:hover {
   color: rgb(239 68 68);
   text-shadow: 0 1px 3px #17181a;
@@ -136,9 +102,7 @@ li.selected {
   height: 100%;
   border-radius: 12px;
 }
-.content-main_icon {
-  font-size: 1.9rem;
-}
+
 .content-skill_icon {
   font-size: 3.6rem;
 }
@@ -156,7 +120,7 @@ li.selected {
 .box {
   width: 250px;
   height: 250px;
-  border: black solid 4px;
+  border: black solid 0.175rem;
   background-image: url("./asset//avatar.png");
   background-size: cover;
   background-position: center;

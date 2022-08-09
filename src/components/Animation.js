@@ -20,10 +20,9 @@ const Animation = () => {
 
   return (
     <motion.div
-      className="box"
+      className="box z-50 relative"
       animate="spin"
       whileTap={"spin"}
-      whileHover={"spin"}
       variants={variants}
     />
   );
