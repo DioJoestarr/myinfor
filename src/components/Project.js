@@ -6,7 +6,7 @@ const Project = () => {
       <div className="project-container"></div>
       <div className="w-full project">
         <a
-          href="https://daiphim.vercel.app/home"
+          href="https://animev2.vercel.app/"
           target="_blank"
           rel="noreferrer"
         >
