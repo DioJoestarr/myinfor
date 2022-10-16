@@ -10,7 +10,8 @@ const Project = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={img} className="project-img" alt="" />
+          <iframe src="https://animev2.vercel.app/" title="animev2" className="w-full h-[720px]"></iframe>
+
         </a>
       </div>
     </>

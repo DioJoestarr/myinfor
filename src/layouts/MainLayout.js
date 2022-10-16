@@ -47,7 +47,7 @@ const MainLayout = () => {
                 </div>
               </div>
               <div className="p-4 w-full">
-                <div className="w-full border-t dark:border-gray-888 border-black opacity-30"></div>
+                <div className="w-full border-t dark:border-gray-300 border-black opacity-30"></div>
               </div>
               <div className="p-2 w-full">
                 <Tabs selectedTab={selectedTab} />
